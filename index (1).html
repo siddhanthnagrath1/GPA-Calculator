@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <div class="year-selection">
+            <button onclick="selectYear('first')">First Year</button>
+            <button onclick="selectYear('second')">Second Year</button>
+            <button onclick="selectYear('third')">Third Year</button>
+        </div>
+        <div id="second-year-container" class="year-container">
+            <h2>Second Year</h2>
+            <div id="subjects-container">
+                <!-- Subject dropdowns will be added here -->
+            </div>
+            <button id="add-subject-btn">Add Subject</button>
+            <button id="calculate-btn">Calculate GPA</button>
+        </div>
+        <div id="result-container">
+            <h2>Your GPA is: <span id="gpa-result"></span></h2>
+            <img src="./assets/sad-cat.png" alt="Sad Cat Thumbs Up" class="cat-image" id="cat-image">
+            <!-- <img src="./assets/happy.gif" alt="Happy Cat Dancing" class="cat-image" id="cat-image2"> -->
+        </div>
+
+        <audio id="music" src="./assets/sad-music.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
